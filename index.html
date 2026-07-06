@@ -9,6 +9,18 @@
     />
     <title>Eugene | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+      defer
+    ></script>
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -98,6 +110,26 @@
               <span class="stat-label">可及性優先</span>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section id="map" class="section section-map">
+        <div class="container">
+          <header class="section-header section-header--center reveal">
+            <p class="section-label">Location</p>
+            <h2>位置</h2>
+            <p class="section-lead">
+              以開源地圖標示台北 101 周邊，方便快速找到所在地。
+            </p>
+          </header>
+          <div class="map-wrapper reveal">
+            <div
+              id="location-map"
+              class="location-map"
+              role="application"
+              aria-label="台北 101 位置地圖"
+            ></div>
+          </div>
         </div>
       </section>
 
